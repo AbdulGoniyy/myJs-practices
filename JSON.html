@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>
+       JSON and localStorage
+      </title>
+       
+  </head>
+
+<body>
+  
+
+  <script>
+
+    object = {
+      wins: 0,
+      loses: 0,
+      ties: 0
+    }
+
+    localStorage.setItem('message', JSON.stringify(object));
+
+    console.log(JSON.parse(localStorage.getItem('message')));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>
+      More exercises on Booleans
+      </title>
+
+      <style>
+
+        .div {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+       .grade {
+         
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 10px;
+           display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
+      </style>
+  </head>
+
+<body>
+
+  <div class="div"> 
+
+    <button onclick="
+
+    let grade = Math.floor(Math.random() * 100);
+    
+      if (grade >= 90) {
+        alert('A');
+      } else if (grade >= 80 && grade <= 89 ) {
+        alert('B');
+      } else if (grade >= 70 && grade <= 79) {
+        alert('C');
+      } else if (grade >= 60 && grade <= 69) {
+        alert('D');
+      } else {
+        alert('F');
+      }
+      " class="grade"> 
+      Enter grade here
+    </button>
+  </div>
+
+
+ <script>
+
+
+  </script>
+</body>
+
+</html>
