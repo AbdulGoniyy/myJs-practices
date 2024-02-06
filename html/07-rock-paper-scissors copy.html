@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title> Rock Pap er Scissors </title>
+      <title> Rock Paper Scissors </title>
   </head>
 
 <body>
@@ -12,7 +12,7 @@
 
   <button onclick="
    playGame('rock');
-  " style="background-color: red; border-radius: 5px; border: none; color: white;"> Rock </button>
+  "> Rock </button>
 
 
   <button onclick="
@@ -28,10 +28,12 @@
   score.wins = 0;
   score.losses = 0;
   score.ties = 0;
-  " style="background-color: aquamarine; border: none; border-radius: 5px;"> Reset Score</button>
-  <script src="js/08-rock-paper-scissors.js"> 
+  localStorage.removeItem('score');
+  alert(`Your score has been reset. Please start the game over.`);
+  "> Reset Score </button>
 
-    
+  <script src="../js/07-rock-paper-scissors copy.js"> 
+  
   </script>
    
 </body>

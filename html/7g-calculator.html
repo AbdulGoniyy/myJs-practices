@@ -8,8 +8,6 @@
   </head>
 
 <body>
-
-
   <p>
 
     <button onclick="
@@ -77,10 +75,8 @@
 "> . </button>
 
 <button onclick="
-calculation = {score: eval(calculation)};
-console.log(calculation.score);
-alert(calculation.score);
-localStorage.setItem('score', JSON.stringify(calculation));
+calculation = eval(calculation);
+alert(eval(calculation));
 "> = </button>
 
 <button onclick="
@@ -91,16 +87,13 @@ localStorage.setItem('score', JSON.stringify(calculation));
 
 <p>
   <button onclick="
-  calculation = '';
-  localStorage.removeItem('score');
-  console.log('Your previous calculations has been cleared');
+  calculation = '0';
+  console.log(`Cleared. ${calculation}`);
   "> Clear </button>
 </p>
 
-  <script src="js/8h.js">
-   
-
-     
+  <script src="../js/7g-calculator.js">
+      
   </script>
 </body>
 
